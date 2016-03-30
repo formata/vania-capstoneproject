@@ -250,11 +250,11 @@ scrolling-background
 
 .footer-text a {
 	text-decoration: none;
-	color: #3763a7;
+	color: #467ed6;
 }
 
 .footer-text a:hover {
-	color: #fff;
+	color: #1a355e;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
 }
@@ -285,11 +285,11 @@ scrolling-background
 }
 
 .icon-footer li a {
-	color: #3763a7;
+	color: #467ed6;
 }
 
 .icon-footer li a:hover {
-	color: #FFF;
+	color: #1a355e;
 	transition-property: color;
 	transition-duration: 0.5s;
 	transition:timing-function: ease-out;
@@ -307,7 +307,7 @@ ABOUT PAGE
 	background-color: #1a355e;
 }
 
-.about-akurat {
+.about-hero {
 	width: 100%;
 	display: inline-block;
 	font-family: 'cantarellbold';
@@ -338,8 +338,8 @@ ABOUT PAGE
 	line-height: 1.4rem;
 	color: #a3a3a3;
 	padding-top: 1rem;
-	padding-right: 2rem;
-	padding-left: 2rem;
+	padding-right: 4rem;
+	padding-left: 4rem;
 }
 
 .about-bodytext{
@@ -427,6 +427,7 @@ hr {
 
 .award-img {
 	width: 100%;
+	height: auto;
 }
 
 .award-content {
@@ -516,11 +517,11 @@ HEADER - MIN 650PX - new code
 	padding-top: 15%;
 	padding-bottom: 12%;
 	text-align: center;
-	background: url("../img/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
 	margin-bottom: 1rem;
+	background-image: url("../img/hero.jpg");
 }
 
 
@@ -687,100 +688,72 @@ ABOUT PAGE : MIN 650PX;
 **************************************************************
 /*************************************************************/
 
+/************ Hero Image ***********/
 
-.about-content {
-	background-color: #1a355e;
-}
-
-.about-akurat {
+.about-hero {
 	width: 100%;
+	max-height: 100%;
+	visibility: visible;
 	display: inline-block;
 	font-family: 'cantarellbold';
-	font-size: 2rem;
+	font-size: 6rem;
 	text-shadow: 2px 2px 3px #091830;
 	letter-spacing: 2px;
 	color: #fff;
-	padding-top: 7rem;
+	padding-top: 15%;
+	padding-bottom: 12%;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
+	margin-bottom: 3rem;
+	background-image: url("../img/about-hero.jpeg");
+	
 }
 
+
 .subtitle-about {
-	width: 100%;
-	text-align: center;
-	display: inline-block;
-	font-family: 'cantarellbold';
-	font-size: 0.75rem;
-	color: #a3a3a3;
-	text-transform: uppercase;
-	letter-spacing: 0.1875rem;
+	font-size: 0.95rem;
+	letter-spacing: 0.2rem;
 }
 
 .about-intro {
-	width: 100%;
-	display: inline-block;
-	font-family: 'cantarellregular';
-	font-size: 1.1rem;
-	line-height: 1.4rem;
-	color: #a3a3a3;
-	padding-top: 1rem;
-	padding-right: 4rem;
-	padding-left: 4rem;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	padding-right: 7rem;
+	padding-left: 7rem;
 }
 
 .about-bodytext{
-	width: 100%;
-	display: inline-block;
-	font-family: 'cantarellregular';
-	font-size: 0.88rem;
-	line-height: 1.2rem;
-	color: #a3a3a3;
-	padding-top: 0;
-	padding-right: 4rem;
-	padding-left: 4rem;
-}
-
-hr {
-	border: none;
-	border-top: 1.2px solid #3489CE;
-	margin-top: 2rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	padding-right: 7rem;
+	padding-left: 7rem;
 }
 
 /****** Leadership *******/
 .leadership-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.team-profile {
-	margin: 1rem;
-	float: left;
-	text-align: center;
+	flex-wrap: nowrap;
 }
 
 .team-profile p {
-	font-family: 'cantarellregular';
-	font-size: 1.2rem;
-	color: #fff;
-	letter-spacing: 0.03rem;
+	font-size: 1.1rem;
 }
 
 .team-profile .team-role {
 	font-family: 'cantarellregular';
-	font-size: 0.9rem;
+	font-size: 0.85rem;
 	text-transform: uppercase;
 	color: #a3a3a3;
+	line-height: 1.4rem;
 	margin-top: -0.7rem;
 	margin-bottom: 1rem;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.03rem;
 }
 
 .team-img {
-	width: 47%;
+	width: 70%;
 }
-
 
 /******* Award **********/
 
@@ -795,11 +768,10 @@ hr {
 	display: inline-block;
 	text-align: center;
 	font-family: 'cantarellbold';
-	font-size: 1.35rem;
+	font-size: 1.5rem;
 	color: #fff;
 	padding-bottom: -2rem;
 }
-
 
 .award-box {
 	float: left;
@@ -915,6 +887,82 @@ FOOTER - MIN 1028PX - new code
 	justify-content: flex-end;
 	margin-top: -8rem;
 }
+
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 1028PX;
+**************************************************************
+/*************************************************************/
+
+/************ Hero Image ***********/
+
+.about-hero {
+	font-size: 8rem;
+}
+
+.subtitle-about {
+	font-size: 0.95rem;
+	letter-spacing: 0.2rem;
+}
+
+.about-intro {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	padding-right: 10rem;
+	padding-left: 10rem;
+}
+
+.about-bodytext{
+	font-size: 1.5rem;
+	line-height: 2.1rem;
+	padding-right: 10rem;
+	padding-left: 10rem;
+}
+
+/****** Leadership *******/
+
+.leadership-container {
+	flex-wrap: nowrap;
+}
+
+.team-profile p {
+	font-size: 1.1rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	line-height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.03rem;
+}
+
+.team-img {
+	width: 70%;
+}
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.award-subtitle {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+}
+
+.award-text {
+	margin-top: 0.8rem;
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+}
 }
 
 /**************************************************************
@@ -945,7 +993,6 @@ MIN 1500PX - MEDIA QUERY -
 	letter-spacing:0.05rem;
 	
 }
-
 
 /*** image service info ***/
 
@@ -984,8 +1031,6 @@ MIN 1500PX - MEDIA QUERY -
 	margin-top: -2rem;
 }
 
-
-
 .imgservice-info p {
 	font-family: 'cantarellregular';
 	font-size: 1.7rem;
@@ -994,5 +1039,93 @@ MIN 1500PX - MEDIA QUERY -
 	line-height: 2.5rem;
 	margin-top: 3rem;
 }
+
+/******* Award **********/
+
+
+.award-subtitle {
+	font-size: 0.875rem;
+	letter-spacing: 1.2px;
+}
+
+.award-text {
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+
+}
+
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 1500PX;
+**************************************************************
+/*************************************************************/
+
+/************ Hero Image ***********/
+
+.about-hero {
+	font-size: 8rem;
+}
+
+.about-intro {
+	font-size: 2rem;
+	line-height: 3rem;
+	padding-right: 22rem;
+	padding-left: 22rem;
+}
+
+.about-bodytext{
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	padding-right: 30rem;
+	padding-left: 30rem;
+}
+
+/****** Leadership *******/
+
+.leadership-container {
+	flex-wrap: nowrap;
+}
+
+.team-profile p {
+	font-size: 1.4rem;
+}
+
+.team-profile .team-role {
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.05rem;
+}
+
+.team-img {
+	width: 50%;
+}
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.award-subtitle {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+}
+
+.award-text {
+	margin-top: 0.8rem;
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+}
+
+.award-title {
+	font-size: 2rem;
+}
+
 }
 
