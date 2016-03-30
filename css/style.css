@@ -451,6 +451,41 @@ hr {
 	line-height: 1.4rem;
 	color: #737373;
 }
+
+/*************************************************************
+**************************************************************
+PROJECT PAGE
+**************************************************************
+/*************************************************************/
+
+.title-left-align {
+	font-family: 'cantarellbold';
+	font-size: 0.98rem;
+	letter-spacing: 0.12rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 0.65rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.project-description {
+font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.65rem;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
+
+
 /**************************************************************
 
 MIN 650PX - MEDIA QUERY -
@@ -808,6 +843,28 @@ ABOUT PAGE : MIN 650PX;
 	color: #737373;
 }
 
+/************************************
+PROJECT PAGE - MIN 650PX
+************************************/
+
+
+.project {
+	margin-top: 6.5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-content: stretch;
+}
+
+.project div {
+    flex: 1  3 100%;
+}
+
+
+.project-img {
+	margin-top: 0;
+}
+
 /**************************************************************
 
 MIN 1028PX - MEDIA QUERY -
@@ -959,9 +1016,9 @@ ABOUT PAGE : MIN 1028PX;
 }
 
 .award-text {
-	margin-top: 0.8rem;
-	font-size: 0.88rem;
-	line-height: 1.4rem;
+	margin-top: 0.7rem;
+	font-size: 0.83rem;
+	line-height: 1.2rem;
 }
 }
 
