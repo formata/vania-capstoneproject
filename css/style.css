@@ -318,7 +318,7 @@ ABOUT PAGE
 	text-align: center;
 }
 
-.subtitle-about {
+.subtitle {
 	width: 100%;
 	text-align: center;
 	display: inline-block;
@@ -362,6 +362,7 @@ hr {
 }
 
 /****** Leadership *******/
+
 .leadership-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -487,6 +488,116 @@ font-family: 'cantarellregular';
 	height: auto;
 	margin-top: 1.2rem;
 }
+
+/*************************************************************
+**************************************************************
+CONTACT PAGE
+**************************************************************
+/*************************************************************/
+.contact-hero {
+	width: 100%;
+	max-height: 100%;
+	visibility: visible;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 2rem;
+	text-shadow: 2px 2px 3px #091830;
+	letter-spacing: 2px;
+	color: #fff;
+	padding-top: 15%;
+	padding-bottom: 12%;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
+	margin-bottom: 1rem;
+	background-image: url("../img/contact-hero.jpeg");
+	margin-top: 5.3rem;
+}
+
+.contact-intro {
+	width: 100%;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: #1a355e;
+	padding-top: 1rem;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.subtitle-blue {
+	color: #1a355e;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	margin-top: 3rem;
+}
+
+/******* Form *********/
+
+#contact-form{
+    padding: 2rem;
+    background: #1a355e;
+ }
+   fieldset{
+   border: none;
+ }
+   .label{
+   	font-family: 'cantarellregular';	
+   	font-size: 0.95rem;
+   	color: #a3a3a3;
+}
+   .textarea{
+    height: 20rem;
+}
+   .input,
+   .drop-down {
+   	border-radius: none;
+    border: 0px solid #1a355e;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+   .input:focus{
+    outline: none;
+    border: 3px solid #467ed6;
+}
+   .drop-down:focus{
+   outline: none;
+   border: 3px solid #467ed6;
+}
+
+/******* Form Button *********/
+
+   .submit-button{
+   		font-family: 'cantarellbold';
+   		font-size: 0.85rem;
+   		letter-spacing: 0.05rem;
+   		text-transform: uppercase;
+		padding: 0.5rem 0.8rem;
+		margin-top: 0.7rem;
+   }
+
+  #contact-submit{
+    color: white;
+    background-color: #467ed6;
+    border: 1px #1a355e;
+    transition: background, color;
+    transition-duration: .5s;
+  }
+
+  #contact-submit:hover{
+    color: #34495e;
+    background-color: white;
+  }
 
 
 /**************************************************************
@@ -749,7 +860,7 @@ ABOUT PAGE : MIN 650PX;
 	background-image: url("../img/about-hero.jpeg");
 }
 
-.subtitle-about {
+.subtitle {
 	font-size: 0.95rem;
 	letter-spacing: 0.2rem;
 }
@@ -869,6 +980,16 @@ section{
 	margin-top: 0;
 }
 
+/************************************
+CONTACT PAGE - MIN 650PX
+************************************/
+
+#contact-form{
+    padding-left: 10rem;
+    padding-right: 10rem;
+ }
+
+
 /**************************************************************
 
 MIN 1028PX - MEDIA QUERY -
@@ -961,7 +1082,7 @@ ABOUT PAGE : MIN 1028PX;
 	font-size: 8rem;
 }
 
-.subtitle-about {
+.subtitle {
 	font-size: 0.95rem;
 	letter-spacing: 0.2rem;
 }
@@ -1024,6 +1145,15 @@ ABOUT PAGE : MIN 1028PX;
 	font-size: 0.83rem;
 	line-height: 1.2rem;
 }
+
+/************************************
+CONTACT PAGE - MIN 1028PX
+************************************/
+
+#contact-form{
+    padding-left: 20rem;
+    padding-right: 20rem;
+ }
 }
 
 /**************************************************************
@@ -1041,7 +1171,6 @@ MIN 1500PX - MEDIA QUERY -
 }
 
 /*****************************/
-
 
 .intro-text {
 	font-family: 'cantarellregular';
@@ -1112,8 +1241,8 @@ MIN 1500PX - MEDIA QUERY -
 .award-text {
 	font-size: 0.88rem;
 	line-height: 1.4rem;
-
 }
+
 
 /*************************************************************
 **************************************************************
@@ -1186,6 +1315,17 @@ ABOUT PAGE : MIN 1500PX;
 
 .award-title {
 	font-size: 2rem;
+}
+
+/************************************
+CONTACT PAGE - MIN 1500PX
+************************************/
+
+#contact-form{
+    padding-left: 35rem;
+    padding-right: 35rem;
+ }
+
 }
 
 }
