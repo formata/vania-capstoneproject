@@ -540,6 +540,32 @@ CONTACT PAGE
 	margin-top: 3rem;
 }
 
+.contact-text {
+	color: #1a355e;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 1.1rem;
+	margin-top: 0.7rem;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #467ed6;
+}
+
+.contact-text a:hover {
+	text-decoration: none;
+	color: #1a355e;
+	transition-property: color;
+	transition-duration: 0.35s;
+	transition:timing-function: ease-out;
+}
+
+.contact-info {
+	padding-bottom: 3rem;
+}
 /******* Form *********/
 
 #contact-form{
@@ -989,6 +1015,10 @@ CONTACT PAGE - MIN 650PX
     padding-right: 10rem;
  }
 
+ .contact-hero {
+	font-size: 6rem;
+}
+
 
 /**************************************************************
 
@@ -1154,6 +1184,11 @@ CONTACT PAGE - MIN 1028PX
     padding-left: 20rem;
     padding-right: 20rem;
  }
+
+ .contact-hero {
+	font-size: 8rem;
+}
+
 }
 
 /**************************************************************
