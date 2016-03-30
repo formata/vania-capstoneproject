@@ -249,13 +249,12 @@ scrolling-background
 }
 
 .footer-text a {
-	transition-property: color;
-	transition-duration: 0.5s;
-	transition:timing-function: ease-out;
+	text-decoration: none;
+	color: #3763a7;
 }
 
 .footer-text a:hover {
-	color: #224070;
+	color: #fff;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
 }
@@ -271,7 +270,6 @@ scrolling-background
 }
 
 .icon-footer {
-	color: #224070;
 	display: flex;
 	flex-direction: row;
 	padding:0;
@@ -284,6 +282,17 @@ scrolling-background
 
 .icon-footer li i {
 	padding: 2rem;
+}
+
+.icon-footer li a {
+	color: #3763a7;
+}
+
+.icon-footer li a:hover {
+	color: #FFF;
+	transition-property: color;
+	transition-duration: 0.5s;
+	transition:timing-function: ease-out;
 }
 
 
@@ -360,21 +369,40 @@ hr {
 	justify-content: center;
 }
 
+.team-profile {
+	margin: 1rem;
+	float: left;
+	text-align: center;
+}
+
+.team-profile p {
+	font-family: 'cantarellregular';
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 0.03rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+.team-img {
+	width: 47%;
+}
+
+
 /******* Award **********/
 
 .award-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.team-profile {
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-
-.team-img {
-	width: 40%;
 }
 
 .award-title {
@@ -390,14 +418,11 @@ hr {
 
 .award-box {
 	float: left;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin: 2rem;
 	width: 300px;
 	height: 300px;
 	background-color: #fff;
 	box-shadow: 3px 3px 3px rgba(9, 24, 48, 0.8);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 
 .award-img {
@@ -656,11 +681,165 @@ FOOTER - MIN 650PX - new code
 	margin-top: -8rem;
 }
 
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 650PX;
+**************************************************************
+/*************************************************************/
+
+
+.about-content {
+	background-color: #1a355e;
+}
+
+.about-akurat {
+	width: 100%;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 2rem;
+	text-shadow: 2px 2px 3px #091830;
+	letter-spacing: 2px;
+	color: #fff;
+	padding-top: 7rem;
+	text-align: center;
+}
+
+.subtitle-about {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 0.75rem;
+	color: #a3a3a3;
+	text-transform: uppercase;
+	letter-spacing: 0.1875rem;
+}
+
+.about-intro {
+	width: 100%;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+	color: #a3a3a3;
+	padding-top: 1rem;
+	padding-right: 4rem;
+	padding-left: 4rem;
+}
+
+.about-bodytext{
+	width: 100%;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 0.88rem;
+	line-height: 1.2rem;
+	color: #a3a3a3;
+	padding-top: 0;
+	padding-right: 4rem;
+	padding-left: 4rem;
+}
+
+hr {
+	border: none;
+	border-top: 1.2px solid #3489CE;
+	margin-top: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+/****** Leadership *******/
+.leadership-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.team-profile {
+	margin: 1rem;
+	float: left;
+	text-align: center;
+}
+
+.team-profile p {
+	font-family: 'cantarellregular';
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 0.03rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+.team-img {
+	width: 47%;
+}
+
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.award-title {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	font-family: 'cantarellbold';
+	font-size: 1.35rem;
+	color: #fff;
+	padding-bottom: -2rem;
+}
+
+
+.award-box {
+	float: left;
+	margin: 2rem;
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px rgba(9, 24, 48, 0.8);
+}
+
+.award-img {
+	width: 100%;
+}
+
+.award-content {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align: center;
+	height: 300px;
+}
+
+.award-subtitle {
+	font-family: 'cantarellbold';
+	font-size: 0.875rem;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	color: #1a355e;
+}
+
+.award-text {
+	font-family: 'cantarellregular';
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+	color: #737373;
+}
+
 /**************************************************************
 
 MIN 1028PX - MEDIA QUERY -
 
-**************************************************************
 **************************************************************/
 
 @media only screen and (min-width: 1028px) {
