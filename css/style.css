@@ -249,13 +249,12 @@ scrolling-background
 }
 
 .footer-text a {
-	transition-property: color;
-	transition-duration: 0.5s;
-	transition:timing-function: ease-out;
+	text-decoration: none;
+	color: #467ed6;
 }
 
 .footer-text a:hover {
-	color: #224070;
+	color: #1a355e;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
 }
@@ -271,7 +270,6 @@ scrolling-background
 }
 
 .icon-footer {
-	color: #224070;
 	display: flex;
 	flex-direction: row;
 	padding:0;
@@ -286,6 +284,17 @@ scrolling-background
 	padding: 2rem;
 }
 
+.icon-footer li a {
+	color: #467ed6;
+}
+
+.icon-footer li a:hover {
+	color: #1a355e;
+	transition-property: color;
+	transition-duration: 0.5s;
+	transition:timing-function: ease-out;
+}
+
 
 /*************************************************************
 **************************************************************
@@ -298,7 +307,7 @@ ABOUT PAGE
 	background-color: #1a355e;
 }
 
-.about-akurat {
+.about-hero {
 	width: 100%;
 	display: inline-block;
 	font-family: 'cantarellbold';
@@ -306,11 +315,10 @@ ABOUT PAGE
 	text-shadow: 2px 2px 3px #091830;
 	letter-spacing: 2px;
 	color: #fff;
-	padding-top: 7rem;
 	text-align: center;
 }
 
-.subtitle-about {
+.subtitle {
 	width: 100%;
 	text-align: center;
 	display: inline-block;
@@ -354,11 +362,40 @@ hr {
 }
 
 /****** Leadership *******/
+
 .leadership-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+.team-profile {
+	margin: 1rem;
+	float: left;
+	text-align: center;
+}
+
+.team-profile p {
+	font-family: 'cantarellregular';
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 0.03rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+.team-img {
+	width: 47%;
+}
+
 
 /******* Award **********/
 
@@ -366,15 +403,6 @@ hr {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.team-profile {
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-
-.team-img {
-	width: 40%;
 }
 
 .award-title {
@@ -390,18 +418,16 @@ hr {
 
 .award-box {
 	float: left;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin: 2rem;
 	width: 300px;
 	height: 300px;
 	background-color: #fff;
 	box-shadow: 3px 3px 3px rgba(9, 24, 48, 0.8);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 
 .award-img {
 	width: 100%;
+	height: auto;
 }
 
 .award-content {
@@ -425,6 +451,181 @@ hr {
 	line-height: 1.4rem;
 	color: #737373;
 }
+
+/*************************************************************
+**************************************************************
+PROJECT PAGE
+**************************************************************
+/*************************************************************/
+
+section{
+	margin-top: 5.3rem;
+}
+
+.title-left-align {
+	font-family: 'cantarellbold';
+	font-size: 0.98rem;
+	letter-spacing: 0.12rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 0.65rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.project-description {
+font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.65rem;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
+
+/*************************************************************
+**************************************************************
+CONTACT PAGE
+**************************************************************
+/*************************************************************/
+.contact-hero {
+	width: 100%;
+	max-height: 100%;
+	visibility: visible;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 2rem;
+	text-shadow: 2px 2px 3px #091830;
+	letter-spacing: 2px;
+	color: #fff;
+	padding-top: 15%;
+	padding-bottom: 12%;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
+	margin-bottom: 1rem;
+	background-image: url("../img/contact-hero.jpeg");
+	margin-top: 5.3rem;
+}
+
+.contact-intro {
+	width: 100%;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: #1a355e;
+	padding-top: 1rem;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.subtitle-blue {
+	color: #1a355e;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	margin-top: 3rem;
+}
+
+.contact-text {
+	color: #1a355e;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'cantarellregular';
+	font-size: 1.1rem;
+	margin-top: 0.7rem;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #467ed6;
+}
+
+.contact-text a:hover {
+	text-decoration: none;
+	color: #1a355e;
+	transition-property: color;
+	transition-duration: 0.35s;
+	transition:timing-function: ease-out;
+}
+
+.contact-info {
+	padding-bottom: 3rem;
+}
+/******* Form *********/
+
+#contact-form{
+    padding: 2rem;
+    background: #1a355e;
+ }
+   fieldset{
+   border: none;
+ }
+   .label{
+   	font-family: 'cantarellregular';	
+   	font-size: 0.95rem;
+   	color: #a3a3a3;
+}
+   .textarea{
+    height: 20rem;
+}
+   .input,
+   .drop-down {
+   	border-radius: none;
+    border: 0px solid #1a355e;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+   .input:focus{
+    outline: none;
+    border: 3px solid #467ed6;
+}
+   .drop-down:focus{
+   outline: none;
+   border: 3px solid #467ed6;
+}
+
+/******* Form Button *********/
+
+   .submit-button{
+   		font-family: 'cantarellbold';
+   		font-size: 0.85rem;
+   		letter-spacing: 0.05rem;
+   		text-transform: uppercase;
+		padding: 0.5rem 0.8rem;
+		margin-top: 0.7rem;
+   }
+
+  #contact-submit{
+    color: white;
+    background-color: #467ed6;
+    border: 1px #1a355e;
+    transition: background, color;
+    transition-duration: .5s;
+  }
+
+  #contact-submit:hover{
+    color: #34495e;
+    background-color: white;
+  }
+
+
 /**************************************************************
 
 MIN 650PX - MEDIA QUERY -
@@ -491,11 +692,11 @@ HEADER - MIN 650PX - new code
 	padding-top: 15%;
 	padding-bottom: 12%;
 	text-align: center;
-	background: url("../img/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
 	margin-bottom: 1rem;
+	background-image: url("../img/hero.jpg");
 }
 
 
@@ -656,11 +857,173 @@ FOOTER - MIN 650PX - new code
 	margin-top: -8rem;
 }
 
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 650PX;
+**************************************************************
+/*************************************************************/
+
+/************ Hero Image ***********/
+
+.about-hero {
+	width: 100%;
+	max-height: 100%;
+	visibility: visible;
+	display: inline-block;
+	font-family: 'cantarellbold';
+	font-size: 6rem;
+	text-shadow: 2px 2px 3px #091830;
+	letter-spacing: 2px;
+	color: #fff;
+	margin-top: -3rem;
+	padding-top: 15%;
+	padding-bottom: 12%;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 2px 5px -1px rgba(9,24,48,0.5);
+	margin-bottom: 3rem;
+	background-image: url("../img/about-hero.jpeg");
+}
+
+.subtitle {
+	font-size: 0.95rem;
+	letter-spacing: 0.2rem;
+}
+
+.about-intro {
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	padding-right: 7rem;
+	padding-left: 7rem;
+}
+
+.about-bodytext{
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	padding-right: 7rem;
+	padding-left: 7rem;
+}
+
+/****** Leadership *******/
+.leadership-container {
+	flex-wrap: nowrap;
+}
+
+.team-profile p {
+	font-size: 1.1rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	line-height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.03rem;
+}
+
+.team-img {
+	width: 70%;
+}
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.award-title {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	font-family: 'cantarellbold';
+	font-size: 1.5rem;
+	color: #fff;
+	padding-bottom: -2rem;
+}
+
+.award-box {
+	float: left;
+	margin: 2rem;
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px rgba(9, 24, 48, 0.8);
+}
+
+.award-img {
+	width: 100%;
+}
+
+.award-content {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align: center;
+	height: 300px;
+}
+
+.award-subtitle {
+	font-family: 'cantarellbold';
+	font-size: 0.875rem;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	color: #1a355e;
+}
+
+.award-text {
+	font-family: 'cantarellregular';
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+	color: #737373;
+}
+
+/************************************
+PROJECT PAGE - MIN 650PX
+************************************/
+
+section{
+	margin-top: 6.5rem;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-content: stretch;
+}
+
+.project div {
+    flex: 1  3 100%;
+}
+
+
+.project-img {
+	margin-top: 0;
+}
+
+/************************************
+CONTACT PAGE - MIN 650PX
+************************************/
+
+#contact-form{
+    padding-left: 10rem;
+    padding-right: 10rem;
+ }
+
+ .contact-hero {
+	font-size: 6rem;
+}
+
+
 /**************************************************************
 
 MIN 1028PX - MEDIA QUERY -
 
-**************************************************************
 **************************************************************/
 
 @media only screen and (min-width: 1028px) {
@@ -736,6 +1099,96 @@ FOOTER - MIN 1028PX - new code
 	justify-content: flex-end;
 	margin-top: -8rem;
 }
+
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 1028PX;
+**************************************************************
+/*************************************************************/
+
+/************ Hero Image ***********/
+
+.about-hero {
+	font-size: 8rem;
+}
+
+.subtitle {
+	font-size: 0.95rem;
+	letter-spacing: 0.2rem;
+}
+
+.about-intro {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	padding-right: 10rem;
+	padding-left: 10rem;
+}
+
+.about-bodytext{
+	font-size: 1.5rem;
+	line-height: 2.1rem;
+	padding-right: 10rem;
+	padding-left: 10rem;
+}
+
+/****** Leadership *******/
+
+.leadership-container {
+	flex-wrap: nowrap;
+}
+
+.team-profile p {
+	font-size: 1.1rem;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: #a3a3a3;
+	line-height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.03rem;
+}
+
+.team-img {
+	width: 70%;
+}
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.award-subtitle {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+}
+
+.award-text {
+	margin-top: 0.7rem;
+	font-size: 0.83rem;
+	line-height: 1.2rem;
+}
+
+/************************************
+CONTACT PAGE - MIN 1028PX
+************************************/
+
+#contact-form{
+    padding-left: 20rem;
+    padding-right: 20rem;
+ }
+
+ .contact-hero {
+	font-size: 8rem;
+}
+
 }
 
 /**************************************************************
@@ -754,7 +1207,6 @@ MIN 1500PX - MEDIA QUERY -
 
 /*****************************/
 
-
 .intro-text {
 	font-family: 'cantarellregular';
 	font-size: 2.3rem;
@@ -766,7 +1218,6 @@ MIN 1500PX - MEDIA QUERY -
 	letter-spacing:0.05rem;
 	
 }
-
 
 /*** image service info ***/
 
@@ -805,8 +1256,6 @@ MIN 1500PX - MEDIA QUERY -
 	margin-top: -2rem;
 }
 
-
-
 .imgservice-info p {
 	font-family: 'cantarellregular';
 	font-size: 1.7rem;
@@ -815,5 +1264,104 @@ MIN 1500PX - MEDIA QUERY -
 	line-height: 2.5rem;
 	margin-top: 3rem;
 }
+
+/******* Award **********/
+
+
+.award-subtitle {
+	font-size: 0.875rem;
+	letter-spacing: 1.2px;
+}
+
+.award-text {
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+}
+
+
+/*************************************************************
+**************************************************************
+ABOUT PAGE : MIN 1500PX;
+**************************************************************
+/*************************************************************/
+
+/************ Hero Image ***********/
+
+.about-hero {
+	font-size: 8rem;
+}
+
+.about-intro {
+	font-size: 2rem;
+	line-height: 3rem;
+	padding-right: 22rem;
+	padding-left: 22rem;
+}
+
+.about-bodytext{
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	padding-right: 30rem;
+	padding-left: 30rem;
+}
+
+/****** Leadership *******/
+
+.leadership-container {
+	flex-wrap: nowrap;
+}
+
+.team-profile p {
+	font-size: 1.4rem;
+}
+
+.team-profile .team-role {
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.05rem;
+}
+
+.team-img {
+	width: 50%;
+}
+
+/******* Award **********/
+
+.award-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.award-subtitle {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+	letter-spacing: 0.5px;
+}
+
+.award-text {
+	margin-top: 0.8rem;
+	font-size: 0.88rem;
+	line-height: 1.4rem;
+}
+
+.award-title {
+	font-size: 2rem;
+}
+
+/************************************
+CONTACT PAGE - MIN 1500PX
+************************************/
+
+#contact-form{
+    padding-left: 35rem;
+    padding-right: 35rem;
+ }
+
+}
+
 }
 
